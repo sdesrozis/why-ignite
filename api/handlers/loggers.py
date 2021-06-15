@@ -9,14 +9,14 @@ from api.utils import gst
 
 
 class Loggers:
-    def __init__(self, dirname=None, clearml=False, tensorboard=True):
+    def __init__(self, dirname=None, clearml=False, tensorboard=True, project_name="ignite", task_name="default"):
 
         self.loggers = []
 
         self.clearml_logger = None
         if idist.get_rank() == 0 and clearml:
             self.clearml_logger = ClearMLLogger(
-                project_name="DRP", task_name="Permeability"
+                project_name=project_name, task_name=task_name
             )
             self.loggers.append(self.clearml_logger)
 
