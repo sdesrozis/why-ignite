@@ -1,2 +1,6 @@
 torch
+torchvision
+tensorboard
+pynvml
+tqdm
 pytorch-ignite

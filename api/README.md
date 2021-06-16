@@ -2,7 +2,7 @@
 
 To run the script 
 ```commandline
-python -m api.mnist --root <dataset-path>
+python -m v0.mnist --root <dataset-path>
 ```
 
 Main ideas 
